@@ -12,7 +12,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 // handle CORS
 const corsOptions = {
-  origin: "https://frontend-two-gilt-78.vercel.app/",
+  origin: '*',
   methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials: true,
 };
