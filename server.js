@@ -19,10 +19,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use("/api/auth", authroute);
-app.use("/api/form", contactRoute);
-app.use("/api/data", serviceRoute);
-app.use("/api/admin", adminRoute); // Use adminMiddleware here
+app.use("/auth", authroute);
+app.use("/form", contactRoute);
+app.use("/data", serviceRoute);
+app.use("/admin", adminRoute); // Use adminMiddleware here
 app.use(errorMiddleware);
 
 const PORT = 5000;
